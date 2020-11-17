@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strikethrough Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/how_to_create_poem.css">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id = "wrapper">
+		<%- include('partials/navigation_header.ejs') %>
+		<div class="wide-column">
+			<h2 id="title">How to Create a <span class="strikethrough">Strikethrough</span> Poem</h2>
+			<div id="how-to">
+				<div id="step-1" class = "step">
+					<h2 class="subtitle">Step-by-Step</h2>
+					<p>
+						A <span class = "strikethrough">strikethrough</span> poem is intended as a score for choreography. Its structure occurs in the following five stages:
+					</p>
+					<p>
+						I
+						<br>
+						Stage I asks that you provide an original poem, two stanzas of six lines each; it must not exceed or fall short of these requirements. When the time comes to use your score in the studio, think of each stage as having a corresponding choreographic sequence.
+					</p>
+					<p>
+						II
+						<br>
+						In Stage II, you will be asked to <span class="strikethrough">strikethrough</span> six lines of the poem you provide. Upon submitting the <span class="strikethrough">strikethrough</span>, a series of six randomly generated fill-in-the-blanks will appear. What you decide to write should be interpreted as movement instructions, each preceded by either an “omit” or an “insert.” The “omit” and “insert” function as markers of how the choreographic sequence will be informed by these new instructions.
+					</p>
+					<p>
+						III
+						<br>
+						Stage III will apply the <span class="strikethrough">strikethrough</span> to the chosen lines. At this time, these lines will disappear and your poem will be reformatted to accommodate the erasures.
+					</p>
+					<p>
+						IV
+						<br>
+						In Stage IV, you will be asked to <span class="strikethrough">strikethrough</span> three lines of the newly formatted poem. Then, repeat the process from Stage II in this stage. Expect only three fill-in-the-blanks to appear, preceded by either an “omit” or an “insert.”
+					</p>
+					<p>
+						V
+						<br>
+						Stage V will—like Stage III—apply the new <span class="strikethrough">strikethrough</span> to the chosen lines, reformatting your poem for one final time.
+						
+					</p>
+					<p>
+						~
+					</p>
+					<p>
+						An option will appear to view the final poem, at which point you may view all stages of the <span class="strikethrough">strikethrough</span> process.
+					</p>
+					<div class = "button-div">
+						<button class ="next step-button nav-button button-with-image">View Examples<img src="/media/caret-right.png" class="button-icon"></button>
+					</div>
+				</div>
+				<div id="step-2" class="step hide fadein">
+					<h2 class="subtitle">Examples</h2>
+					<div id="step-2-media">
+						<div id="example-animation">
+							<video id="jade-animation-video">
+								<source src="./media/how_to/jade_animation.mp4" type="video/mp4">
+							</video>
+							<div class="progress-bar"></div>
+							<div id="ctp">
+								Click video above to unlock the next step.
+							</div>
+						</div>
+						<div id="example-poem">
+							 <img src="/media/gallery/maxine/strikethrough_1/strikethrough_1_stage_1.jpg" class="example-st-image cur" id="st-1">
+							 <img src="/media/gallery/maxine/strikethrough_1/strikethrough_1_stage_2.jpg" class="example-st-image nxt" id="st-2">
+						</div>
+					</div>
+					<div class="button-div">
+						<button class ="prev step-button nav-button button-with-image "><img src="/media/caret-left.png" class="button-icon">Instructions</button>
+						<button class ="next step-button nav-button button-with-image fadein hide">Next<img src="/media/caret-right.png" class="button-icon"></button>
+					</div>
+				</div>
+				<div id="step-3" class="step hide fadein">
+					<h2 class="subtitle">Agreement</h2>
+					<p>
+						Please note in order for the Strikethrough Poem Creation Tool to function, JavaScript must be enabled in your browser. If you are unsure about this or don't know how, check out <a href="https://www.enable-javascript.com/" target="_blank" class="show-link-deco">this link</a>. 
+					</p>
+					<p id="consent-agreement">
+						We strongly support collaboration in art in all forms possible, as it fosters growth, imagination, and new ideas. Becasue of this, we have created a <a href="/gallery" class="show-link-deco">public gallery</a> on this site to display visitors' <span class="strikethrough">strikethrough</span> poems for the world to see. Also included in this gallery is all of Maxine's original scores used in her choreographic process for her piece <em><span class="strikethrough">strikethrough</span></em>.
+					</p>
+					<p>
+						<span class="warning">Because of this, we must ask your permission first to store the <span class="strikethrough">strikethrough</span> poem that you create on our server, so that we can display it in the gallery.</span>
+					</p>
+					<p>
+						We do not allow visitors to save other contributer's poems - only view them. Because this is visible to the public, do not put any sensitive data in the poem. You may opt out of this option and your poem will not show up in the gallery. No matter what you pick, you will always have the option to save your own poem as a PDF to your computer at the end of the creation process.
+					</p>
+					<p>
+						<em>The owners and operators of strikethrough-score.org reserve the right to remove and delete any poem from the poem gallery without notice.</em>
+					</p>
+					<div id="agreement-div">
+						<input type="checkbox" name="save_pdf" id="save_pdf_box" value="is_checked">
+						<div id="save_pdf_label">
+							I consent to my poem made in 'striekthrough poem creation tool to be saved by the operators of this strikethrough-score.org and displayed in a public gallery.
+						</div>	
+					</div>
+					<div class="button-div">
+						<button class ="prev step-button nav-button button-with-image"><img src="/media/caret-left.png" class="button-icon">View Examples</button>
+						<a href="/create_poem/?save_pdf=false" id="create_poem_link">
+							<button id="go_to_st" class="nav-button next">Create <span class="strikethrough">Strikethrough</span> Poem</button>
+						</a>
+					</div>
+				</div>
+			</div> <!-- end of how-to-->
+			<%- include('partials/contact_us.ejs') %>
+		</div> <!--end of wide column -->
+	</div>
+</body>
+	<script src="/scripts/pdfjs/build/pdf.js"></script>
+	<script src="/scripts/pdfjs/build/pdf.worker.js"></script>
+	<script src="../scripts/common.js"></script>
+	<script src="../scripts/how_to_create_poem.js"></script>
+</html>

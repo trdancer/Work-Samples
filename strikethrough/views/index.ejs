@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strikethrough Home</title>
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+	<body>
+		<%- include('partials/navigation_header.ejs') %>
+		<div id = "wrapper">
+		<div class="row hide" id="welcome-section">
+			<div class="welcome-bg"></div>
+				<div class ="welcome-message fadein-2">Welcome to <span class = "strikethrough">Strikethrough</span>.<br>
+					Please watch the following three short videos to learn more about the creative process.<br>
+					<br>Click the video on the left to begin playing.
+				</div>
+					
+				<div id="videos">
+				<div class= "video-wrapper" id="intro-wrapper">
+					<video id="intro-video">
+						<source src="/media/homepage/intro_homepage.mp4" type="video/mp4">
+					</video>
+					<div class="progress-bar"></div>
+				</div>
+				<div class= "video-wrapper transparent no-pointer" id="performance-wrapper">
+					<video id="performance-video" class="no-pointer">
+						<source src="" type="video/mp4">
+					</video>
+					<div class="progress-bar"></div>
+				</div>
+				<div class= "video-wrapper transparent " id="outro-wrapper">
+					<video id="outro-video" class= "no-pointer">
+						<source src="" type="video/mp4">
+					</video>
+					<div class="progress-bar"></div>
+				</div>
+				</div>
+		</div>
+		<div class="wide-column">
+				<button class="nav-button replay-button hide fadein-2">Replay Welcome Videos <img src="/media/restart-icon.png" class="replay-icon"></button>
+		<div class="" id="main-section">
+				<div class="row-item">
+					<img src="/media/play_icon.png" class='play-icon' style="top: 40%;">
+					<video>
+						<source src="/media/homepage/create.mp4" type="video/mp4">
+					</video>
+					<a href="/how_to_create_poem"><button class='nav-button'>Create a <span class='strikethrough'>Strikethrough</span> Poem</button></a>
+				</div>
+				<div class="row-item" style="align-self: center;">
+					<img src="/media/play_icon.png" class='play-icon'>
+					<video>
+						<source src="/media/homepage/poem_gallery.mp4" type="video/mp4">
+					</video>
+					<a href="/gallery"><button class='nav-button'>Poem Gallery</button></a>
+				</div>
+				<div class="row-item">
+					<img src="/media/play_icon.png" class='play-icon'>
+					<video>
+						<source src="/media/homepage/archive.mp4" type="video/mp4">
+					</video>
+					<a href="/archive"><button class='nav-button'>Thesis Archive</button></a>
+				</div>
+				<div class="row-item">
+					<img src="/media/play_icon.png" class='play-icon'>
+					<video>
+						<source src="/media/homepage/collaborators.mp4" type="video/mp4">
+					</video>
+					<a href="/collaborators"><button class='nav-button'>Collaborators</button></a>
+				</div>
+		</div>
+	<%- include('partials/contact_us.ejs') %>
+		<!-- <div id='cookie-div'>
+			<button id="cookie-remover">Remove all Cookies</button>
+		</div> -->
+	</div>
+	</div>
+		<div class="cookie-banner hide">
+			<div class="banner-content">
+				<div class="cookie-notice">
+					<b>Notice:</b> This website requires the use of cookies to temporararily store anonymous data so that you can have the best experience possible.
+					<br>You or you computer are not associated with this data at any point.
+				</div>
+				<div id="accept-cookies-box">
+					<button class="nav-button">OK</button>
+				</div>
+			</div>
+			<div id="x-button" class="pointer-hover"><img src="/media/x_button.png"></div>
+
+		</div>
+	</body>
+	<script src="../scripts/common.js"></script>
+	<script src = "../scripts/index.js"></script>
+</html>

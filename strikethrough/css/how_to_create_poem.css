@@ -1,0 +1,186 @@
+p {
+	line-height: 16pt;
+}
+#title {
+	font-size: 22pt;
+	margin: 7px	0;
+}
+.subtitle {
+	font-size: 20pt;
+}
+#how-to {
+	position: relative;
+	min-height: 100vh;
+	margin-bottom: 40px;
+	transition: min-height 0.5s ease;
+}
+.step {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#step-1, #step-3 {
+	margin: 0 20%;
+}
+#step-2 {
+	width: 100%;
+	/*margin: 0 10%;*/
+}
+.button-div {
+	position: relative;
+	clear: left;
+}
+.step-button {
+	margin: 5px 15px;
+	font-size: 12pt;
+	width: auto;
+	position: absolute;
+}
+.prev {
+	padding-right: 15px;
+	left: 0px;
+}
+.next {
+	padding-left: 15px;
+	right: 0px;
+}
+#step-2-media {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 110vh;
+}
+#jade-animation-video {
+	width: 100%;
+	box-shadow: 0px 0px 17px -1px #000a;
+}
+#step-2-buttons {
+	position: relative;
+}
+#step-2 .prev {
+	position: absolute;
+}
+#step-2 .next {
+	position: absolute;
+}
+#step-3 .button-div {
+	margin-top: 50px;
+}
+#step-3 .prev {
+	margin-left: 0;
+}
+#example-animation {
+	position: relative;
+	display: inline-block;
+	/*text-align: center;*/
+	width: 50%;
+	margin: 0 10px;
+
+	/*vertical-align: middle;*/
+	/*border: 2px black solid;*/
+}
+.progress-bar {
+	transition: width ease 0.4s;
+	width: 0px;
+	height: 3px;
+	background-color: #000;
+	margin: 7px 0;
+	position: relative;
+}
+#ctp {
+	background-color: #CCC;
+	padding-top: 7px;
+	padding-bottom:7px;
+	margin-top: 10px;
+	text-align: center;
+}
+#example-poem {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 48%;
+	transform-style: preserve-3d;
+	perspective: 2000px;
+	/*border: 2px black solid;*/
+}
+.example-st-image {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	/*backface-visibility: hidden;*/
+}
+.nxt {
+	z-index: 1;
+}
+.cur {
+	box-shadow: 0px 0px 17px -1px #000a;
+	z-index: 2;
+}
+#agreement-div {
+	display: flex;
+	align-items: top;
+}
+#save_pdf_box {
+	margin-top: 0;
+	height: 20px;
+	display: inline-block;
+	margin-bottom: 5px;
+	float: left;
+}
+#save_pdf_label {
+	margin-left: 10px; 
+	display: inline-block;
+	font-size: 11pt;
+}
+.warning {
+	color: red;
+	font-style: italic; 
+}
+#go_to_st {
+	width: auto;
+	position: absolute;
+	right: 0px;
+	font-size: 12pt;
+	padding:0 13px;
+}
+.contact-div {
+	width: 80%;
+	justify-content: space-between;
+}
+#contact-button {
+	margin-right: 0px;
+}
+.flipforward {
+	animation-name: flipF;
+	animation-duration: 2.7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+.flipbackward {
+	animation-name: flipB;
+	animation-duration: 2.7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+@keyframes flipF {
+	0% {
+		z-index: 3;
+		transform: rotateY(180deg);
+	}
+	100% {
+		
+		z-index: 4;
+		transform: rotateY(0deg);
+	}
+}
+@keyframes flipB {
+	0% {
+		z-index: 4;
+		transform: rotateY(0deg);
+	}
+	100% {
+		z-index: 3;
+		transform: rotateY(-180deg);
+	}
+}
